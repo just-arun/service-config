@@ -1,0 +1,4 @@
+bin/
+.app-env.yml
+vendor/
+go.sum
