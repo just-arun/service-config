@@ -3,7 +3,7 @@ package serviceconfig
 import "github.com/spf13/viper"
 
 var (
-	AppConfig Config
+	// AppConfig Config
 )
 
 // for loading environmental variable from location
@@ -25,13 +25,13 @@ func LoadVars(path, name, fileType string) (configuration Config, err error) {
 	return
 }
 
-func InitConfig(path, name, fileType string) {
-	var err error
-	AppConfig, err = LoadVars(path, name, fileType)
-	if err != nil {
-		panic(err)
-	}
-}
+// func InitConfig(path, name, fileType string) {
+// 	var err error
+// 	AppConfig, err = LoadVars(path, name, fileType)
+// 	if err != nil {
+// 		panic(err)
+// 	}
+// }
 
 
 func GetConfig(path, name, fileType string) (Config) {
