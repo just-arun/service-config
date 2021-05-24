@@ -23,7 +23,7 @@ func (s *GetDGraphDBParam) conStr() string {
 	return fmt.Sprintf("%v:%v", s.Host, s.Port)
 }
 
-func GetDGraphDB(param GetDGraphDBParam) (dGraphClient *dgo.Dgraph, cancelFunction CancelFunc) {
+func getDGraphDB(param GetDGraphDBParam) (dGraphClient *dgo.Dgraph, cancelFunction CancelFunc) {
 	conn, err := grpc.Dial(param.conStr(), grpc.WithInsecure())
 	if err != nil {
 		panic("While trying to dial gRPC")

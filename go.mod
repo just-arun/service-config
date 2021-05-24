@@ -5,8 +5,10 @@ go 1.16
 require (
 	github.com/aerospike/aerospike-client-go v4.5.0+incompatible // indirect
 	github.com/aws/aws-sdk-go v1.38.45 // indirect
+	github.com/cockroachdb/cockroach-go/v2 v2.1.1 // indirect
 	github.com/dgraph-io/dgo v1.0.0 // indirect
 	github.com/fsnotify/fsnotify v1.4.9 // indirect
+	github.com/jackc/pgx/v4 v4.11.0 // indirect
 	github.com/klauspost/compress v1.12.2 // indirect
 	github.com/magiconair/properties v1.8.5 // indirect
 	github.com/mitchellh/mapstructure v1.4.1 // indirect

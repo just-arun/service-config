@@ -6,7 +6,7 @@ import (
 )
 
 // GetClickhouseDB connect to clickhouse db connection
-func GetClickhouseDB(host string, port int, debug bool) *sql.DB {
+func getClickhouseDB(host string, port int, debug bool) *sql.DB {
 	connectionString := fmt.Sprintf(
 		"tcp://%v:%v?debug=%v",
 		host,

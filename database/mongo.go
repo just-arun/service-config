@@ -10,7 +10,7 @@ import (
 	"go.mongodb.org/mongo-driver/mongo/readpref"
 )
 
-func GetMongoInstance(mongoUri string) *mongo.Client {
+func getMongoInstance(mongoUri string) *mongo.Client {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 	client, err := mongo.Connect(ctx, options.Client().ApplyURI(mongoUri))
